@@ -1,53 +1,50 @@
-🚢 Batalha Naval - Posicionando Navios (Nível Novato)
-Este é um desafio introdutório em linguagem C com foco em arrays unidimensionais e bidimensionais, onde simulamos o posicionamento de dois navios no tabuleiro de um jogo de Batalha Naval. Um navio é colocado na orientação horizontal e outro na vertical em uma matriz 10x10.
+# 🚢 Batalha Naval - Posicionando Navios (Nível Novato)
 
-🧠 Conceitos aplicados
-Matrizes (arrays bidimensionais)
+Desafio introdutório em **linguagem C**, focado em arrays unidimensionais e bidimensionais.  
+Simulamos o posicionamento de dois navios em um tabuleiro 10x10 do jogo **Batalha Naval**:
 
-Vetores (arrays unidimensionais)
+- 1 navio na **horizontal**
+- 1 navio na **vertical**
 
-Estruturas de repetição (for)
+---
 
-Condicionais (if)
+## 🧠 Conceitos aplicados
 
-Boas práticas de codificação (legibilidade e comentários)
+- 🧮 Matrizes (arrays bidimensionais)  
+- 📏 Vetores (arrays unidimensionais)  
+- 🔁 Estruturas de repetição (`for`)  
+- 🧠 Condicionais (`if`)  
+- ✍️ Boas práticas (legibilidade, indentação e comentários)
 
-📋 Requisitos do Desafio
-Criar uma matriz 10x10 representando o tabuleiro (valores 0 = água).
+---
 
-Posicionar dois navios de tamanho 3:
+## 📋 Requisitos do desafio
 
-Um na horizontal
+- Criar uma matriz 10x10 representando o tabuleiro (`0` = água)
+- Posicionar dois navios de tamanho 3:
+  - Um na **horizontal**
+  - Um na **vertical**
+- Usar o valor `3` para representar as partes dos navios
+- Garantir:
+  - ✅ Os navios **não ultrapassem os limites**
+  - ✅ **Não se sobreponham**
+- Exibir o tabuleiro formatado no console
 
-Outro na vertical
+---
 
-Usar 3 para representar a presença de partes dos navios.
+## 🛠️ Funcionamento do código
 
-Garantir:
+- `tabuleiro[10][10]`: matriz que representa o tabuleiro
+- Coordenadas dos navios são **definidas diretamente no código**
+- A função `exibirTabuleiro()` imprime o estado atual
+- Validações impedem:
+  - Que os navios saiam do tabuleiro
+  - Que um navio sobreponha o outro
+- Os navios são posicionados copiando os valores para a matriz conforme orientação
 
-Os navios não ultrapassem os limites do tabuleiro.
+---
 
-Os navios não se sobreponham.
-
-Exibir o tabuleiro no console de forma clara.
-
-🛠️ Como funciona o código
-Estrutura principal:
-tabuleiro[10][10]: matriz que armazena o estado do jogo.
-
-Coordenadas dos navios são definidas diretamente no código.
-
-Função exibirTabuleiro() mostra a matriz no terminal.
-
-Validações garantem que os navios:
-
-Fiquem dentro dos limites.
-
-Não se sobreponham.
-
-O posicionamento copia os valores dos vetores dos navios para a matriz.
-
-✅ Exemplo de Saída
+## ✅ Exemplo de saída
 
 Tabuleiro:
 
